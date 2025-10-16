@@ -1,0 +1,23 @@
+{
+  "name": "hacker-escape-room-frontpage",
+  "version": "1.0.0",
+  "description": "Responsive frontpage built in SASS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maju0029/Hacker-escape-room-frontpage.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maju0029/Hacker-escape-room-frontpage/issues"
+  },
+  "homepage": "https://github.com/maju0029/Hacker-escape-room-frontpage#readme",
+  "dependencies": {
+    "sass": "^1.93.2"
+  }
+}
