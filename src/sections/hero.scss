@@ -1,0 +1,30 @@
+@use '../sections/lib' as *;
+
+.hero {
+  width: 1280px;
+  height: 468px;
+}
+
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  position: relative;
+}
+
+.heroButtons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: -40px;
+
+    .buttonRed {
+        @include buttonRed;
+    }
+    
+    .buttonBlue {
+        @include buttonBlue;
+    }
+}
