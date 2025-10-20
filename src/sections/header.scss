@@ -11,6 +11,10 @@ left: 0px;
 top: 0px;
 h1 {
 //aiming to link the font from html file
+  color: $text-color;
+  @include roboto-bold;
+  font-size: 48px;
+  margin-left: 20px;
     }
 }
 
@@ -19,4 +23,28 @@ h1 {
   justify-content: flex-end;
   align-items: center;
   margin-left: 10px;
-}   
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: 20px;
+
+  ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+
+    li {
+      a {
+        text-decoration: none;
+        color: $text-color;
+        @include roboto-bold;
+        }
+      }
+    }
+  }
