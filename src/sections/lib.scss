@@ -17,7 +17,7 @@ $text-color: #FFFFFF;
 }
 
 @mixin buttonRed {
-  background-color: #FF5733;
+  background-color: #ac1515;
   color: #FFFFFF;
   border: none;
   padding: 10px 20px;
@@ -26,16 +26,17 @@ $text-color: #FFFFFF;
   height: 66px;
   cursor: pointer;
   @include roboto-bold;
-  margin-right: 10px;
+  border-radius: 6px;
 }
 
 @mixin buttonBlue {
-  background-color: #337AFF;
+  background-color: lightskyblue;
   color: black;
   border: none;
   width: 308px;
   height: 66px;
   padding: 10px 20px;
+  border-radius: 6px;
   font-size: 25px;
   cursor: pointer;
   @include roboto-bold;

@@ -1,0 +1,23 @@
+.testimonials {
+  background-color: white; // bakgrunden hamnar bakom, fixa
+  width: 1280px;
+  height: 400px;
+  margin: -29px;
+  display: flex;  
+}
+
+.testimonials img {
+  width: 96px;
+  height: 96px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.testimonial1, .testimonial2 {
+  width: 600px;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  font-family: "Roboto-italic"; // fixa
+  font-size: 20px;
+}
