@@ -1,13 +1,12 @@
 $background-color: #011827;
 $text-color: #FFFFFF;
+$text-color-black: #000000;
 
 @mixin roboto-bold {
   font-family: "Roboto", sans-serif;
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
 }
 
 @mixin roboto-italic {
@@ -15,8 +14,13 @@ $text-color: #FFFFFF;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: italic;
-  font-variation-settings: //vad är detta?
-    "wdth" 100;
+}
+
+@mixin roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 
 @mixin hover-blue {
@@ -26,7 +30,7 @@ $text-color: #FFFFFF;
 }
 
 @mixin buttonRed {
-  background-color: #ac1515;
+  background-color: #E3170A;
   color: #FFFFFF;
   border: none;
   padding: 10px 20px;

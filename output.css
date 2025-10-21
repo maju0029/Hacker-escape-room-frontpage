@@ -14,7 +14,6 @@ h1 {
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
-  font-variation-settings: "wdth" 100;
   font-size: 48px;
   margin-left: 20px;
 }
@@ -52,7 +51,6 @@ h1 {
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
-  font-variation-settings: "wdth" 100;
 }
 .nav ul li a:hover {
   color: #8ACFE5;
@@ -88,7 +86,7 @@ h1 {
   top: 660px;
 }
 .heroButtons .buttonRed {
-  background-color: #ac1515;
+  background-color: #E3170A;
   color: #FFFFFF;
   border: none;
   padding: 10px 20px;
@@ -100,7 +98,6 @@ h1 {
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
-  font-variation-settings: "wdth" 100;
   border-radius: 6px;
 }
 .heroButtons .buttonBlue {
@@ -117,7 +114,6 @@ h1 {
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
-  font-variation-settings: "wdth" 100;
 }
 
 .body {
@@ -155,7 +151,6 @@ h1 {
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: italic;
-  font-variation-settings: "wdth" 100;
 }
 
 .challenges {
@@ -165,9 +160,13 @@ h1 {
   height: 700px;
 }
 .challenges h2 {
-  font-size: 1.8rem;
-  margin-bottom: 2rem;
-  color: #111;
+  font-size: 36px;
+  margin-bottom: 50px;
+  color: #000000;
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 .challenges .card-container {
   display: flex;
@@ -207,14 +206,21 @@ h1 {
   align-items: flex-start;
 }
 .challenges .card .card-header h3 {
-  font-size: 1.1rem;
-  font-weight: 600;
+  font-size: 28px;
   margin: 0;
   text-align: left;
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 .challenges .card .card-header .participants {
   font-size: 0.9rem;
-  color: #555;
+  color: #000000;
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 .challenges .card .rating {
   color: #e53935;
@@ -223,21 +229,27 @@ h1 {
 }
 .challenges .card p {
   text-align: left;
-  color: #333;
-  font-size: 0.95rem;
-  line-height: 1.4;
+  color: #000000;
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
   flex-grow: 1;
 }
 .challenges .card button {
-  background: #e53935;
+  background: #E3170A;
   color: white;
   border: none;
   padding: 0.6rem 1rem;
-  font-size: 0.95rem;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
   border-radius: 4px;
   cursor: pointer;
   align-self: flex-start;
-  margin-top: 1rem;
   transition: background 0.2s ease;
 }
 .challenges .card button:hover {
@@ -263,10 +275,9 @@ h1 {
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
-  font-variation-settings: "wdth" 100;
 }
 .challenges .challengesButtons .buttonRed {
-  background-color: #ac1515;
+  background-color: #E3170A;
   color: #FFFFFF;
   border: none;
   padding: 10px 20px;
@@ -278,7 +289,6 @@ h1 {
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
-  font-variation-settings: "wdth" 100;
   border-radius: 6px;
 }
 
@@ -290,7 +300,7 @@ h1 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: white;
+  color: #FFFFFF;
 }
 
 .btnStory {

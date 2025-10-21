@@ -6,9 +6,10 @@
   width: 1280px;
   height: 700px;
   h2 {
-    font-size: 1.8rem;
-    margin-bottom: 2rem;
-    color: #111;
+    font-size: 36px;
+    margin-bottom: 50px;
+    color: #000000;
+    @include roboto-regular;
   }
 
   .card-container {
@@ -53,15 +54,16 @@
       align-items: flex-start;
 
       h3 {
-        font-size: 1.1rem;
-        font-weight: 600;
+        font-size: 28px;
         margin: 0;
         text-align: left;
+        @include roboto-regular;
       }
 
       .participants {
         font-size: 0.9rem;
-        color: #555;
+        color: $text-color-black;
+        @include roboto-regular;
       }
     }
 
@@ -73,22 +75,22 @@
 
     p {
       text-align: left;
-      color: #333;
-      font-size: 0.95rem;
-      line-height: 1.4;
+      color: $text-color-black;
+      font-size: 18px;
+      @include roboto-regular;
       flex-grow: 1;
     }
 
     button {
-      background: #e53935;
+      background:#E3170A;
       color: white;
       border: none;
       padding: 0.6rem 1rem;
-      font-size: 0.95rem;
+      font-size: 16px;
+      @include roboto-bold;
       border-radius: 4px;
       cursor: pointer;
       align-self: flex-start;
-      margin-top: 1rem;
       transition: background 0.2s ease;
 
       &:hover {
