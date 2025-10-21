@@ -1,0 +1,12 @@
+@use '../sections/lib' as *;
+
+.story {
+  background-color: $background-color;
+  width: 1280px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+

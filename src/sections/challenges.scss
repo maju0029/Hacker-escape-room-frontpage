@@ -1,0 +1,114 @@
+@use '../sections/lib' as *;
+
+.challenges {
+  text-align: center;
+  background: #fff;
+  width: 1280px;
+  height: 700px;
+  h2 {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    color: #111;
+  }
+
+  .card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;   // så att korten radbryts på mindre skärm
+    gap: 2rem;
+  }
+
+  .card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    overflow: hidden;
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+    }
+
+    img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card-body {
+      padding: 1rem 1.2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+    }
+
+    .card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+
+      h3 {
+        font-size: 1.1rem;
+        font-weight: 600;
+        margin: 0;
+        text-align: left;
+      }
+
+      .participants {
+        font-size: 0.9rem;
+        color: #555;
+      }
+    }
+
+    .rating {
+      color: #e53935; // röd färg på stjärnorna
+      margin: 0.4rem 0;
+      text-align: left;
+    }
+
+    p {
+      text-align: left;
+      color: #333;
+      font-size: 0.95rem;
+      line-height: 1.4;
+      flex-grow: 1;
+    }
+
+    button {
+      background: #e53935;
+      color: white;
+      border: none;
+      padding: 0.6rem 1rem;
+      font-size: 0.95rem;
+      border-radius: 4px;
+      cursor: pointer;
+      align-self: flex-start;
+      margin-top: 1rem;
+      transition: background 0.2s ease;
+
+      &:hover {
+        background: #c62828;
+      }
+    }
+  }
+
+    .challengesButtons {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 70px;
+    
+    .buttonBlue {
+      @include buttonBlue;
+    }
+
+    .buttonRed {
+      @include buttonRed;
+    }
+}
+}

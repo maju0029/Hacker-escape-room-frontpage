@@ -10,6 +10,15 @@ $text-color: #FFFFFF;
     "wdth" 100;
 }
 
+@mixin roboto-italic {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: italic;
+  font-variation-settings: //vad är detta?
+    "wdth" 100;
+}
+
 @mixin hover-blue {
   &:hover {
     color: #8ACFE5;

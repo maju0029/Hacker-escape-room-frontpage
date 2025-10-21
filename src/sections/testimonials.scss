@@ -1,9 +1,12 @@
+@use '../sections/lib' as *;
+
 .testimonials {
   background-color: white; // bakgrunden hamnar bakom, fixa
   width: 1280px;
   height: 400px;
-//  margin: -29px;
   display: flex;
+  align-items: flex-start;
+  justify-content: center;
 }
 
 .testimonials img {
@@ -14,10 +17,12 @@
 }
 
 .testimonial1, .testimonial2 {
-  width: 600px;
-  margin: 20px;
-  padding: 20px;
-  border: 1px solid #ccc;
-  font-family: "Roboto-italic"; // fixa
+  display: flex;
+  align-items: center;
+  flex-direction: flex-end;
+  gap: 10px;
+  width: 409px;
+  margin-top: 130px;
   font-size: 20px;
+  @include roboto-italic;
 }
