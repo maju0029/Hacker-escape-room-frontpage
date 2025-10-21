@@ -9,11 +9,21 @@
   align-items: center;
   justify-content: center;
   color: $text-color;
+  @include roboto-regular;
+  font-size: 28px;
+  text-align: center;
+}
+
+.story_box {
+  width: 632px;
+  height: 169px;
+  margin-bottom: 30px;
 }
 
 .btnStory {
   margin-top: 20px;
   border-radius: 3px;
+  font-size: 24px;
   width: 308px;
   height: 66px;
   color: #8ACFE5;

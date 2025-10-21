@@ -4,7 +4,7 @@
   text-align: center;
   background: #fff;
   width: 1280px;
-  height: 700px;
+  height: 800px;
   h2 {
     font-size: 36px;
     margin-bottom: 50px;
@@ -98,13 +98,15 @@
       }
     }
   }
-
-    .challengesButtons {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      margin-top: 70px;
+  
+  .challengesButtons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 50px;
+    z-index: 1;
     
+
     .buttonBlue {
       @include buttonBlue;
     }
@@ -112,5 +114,6 @@
     .buttonRed {
       @include buttonRed;
     }
+  }
 }
-}
+
