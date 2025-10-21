@@ -335,3 +335,10 @@ h1 {
   width: 640px;
   height: 460px;
 }
+
+.footer {
+  background-color: #011827;
+  color: #FFFFFF;
+  width: 1280px;
+  height: 467px;
+}
