@@ -379,8 +379,8 @@ h5 {
 }
 
 .play_text_2 {
-  width: 640px;
-  height: 460px;
+  width: 1280px;
+  height: 640px;
   background-color: white;
   font-size: 24px;
   font-family: "Roboto", sans-serif;
@@ -402,6 +402,7 @@ h5 {
   width: 640px;
   height: 460px;
   display: block;
+  margin-left: -640px;
 }
 
 .btn_book_on_site {
@@ -455,6 +456,56 @@ h5 {
 .footer {
   background-color: #011827;
   color: #FFFFFF;
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
   width: 1280px;
   height: 467px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.footer .footer-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 160px;
+  padding: 80px 120px;
+}
+.footer .footer-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 10px;
+  flex: 0 0 300px;
+}
+.footer .footer-column h6 {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 18px;
+}
+.footer .footer-column p {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+}
+.footer .footer-column ul {
+  list-style: none;
+}
+.footer .footer-column ul li {
+  margin-bottom: 6px;
+}
+.footer .footer-column ul a {
+  color: #FFFFFF;
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  font-size: 18px;
 }

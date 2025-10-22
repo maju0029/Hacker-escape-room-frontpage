@@ -45,8 +45,8 @@ h5 {
     flex-direction: row-reverse;
 }
 .play_text_2 {
-    width: 640px;
-    height: 460px;
+    width: 1280px;
+    height: 640px;
     background-color: white;
     font-size: 24px;
     @include roboto-regular;
@@ -64,6 +64,7 @@ h5 {
     width: 640px;
     height: 460px;
     display: block;
+    margin-left: -640px;
  }
 
  .btn_book_on_site {

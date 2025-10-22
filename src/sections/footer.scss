@@ -1,8 +1,53 @@
 @use '../sections/lib' as *;
 
 .footer {
-    background-color: $background-color;
-    color: $text-color;
-    width: 1280px;
-    height: 467px;
+  background-color: $background-color;
+  color: $text-color;
+  @include roboto-bold;
+  width: 1280px;
+  height: 467px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  .footer-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 160px;
+    padding: 80px 120px;
+  }
+
+  .footer-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 10px;
+    flex: 0 0 300px;
+
+    h6 {
+      @include roboto-bold;
+      font-size: 18px;
+    }
+
+    p {
+      @include roboto-regular;
+      font-size: 18px;
+    }
+
+    ul {
+      list-style: none;
+
+      li {
+        margin-bottom: 6px;
+      }
+
+      a {
+        color: $text-color;
+        @include roboto-regular;
+        text-decoration: none;
+        font-size: 18px;
+      }
+    }
+  }
 }
