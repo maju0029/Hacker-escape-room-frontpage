@@ -159,7 +159,7 @@ h1 {
   width: 1280px;
   height: 800px;
 }
-.challenges h2 {
+.challenges h3 {
   font-size: 36px;
   margin-bottom: 50px;
   color: #000000;
@@ -205,7 +205,7 @@ h1 {
   justify-content: space-between;
   align-items: flex-start;
 }
-.challenges .card .card-header h3 {
+.challenges .card .card-header h4 {
   font-size: 28px;
   margin: 0;
   text-align: left;
