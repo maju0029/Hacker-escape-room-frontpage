@@ -1,6 +1,9 @@
 $background-color: #011827;
 $text-color: #FFFFFF;
 $text-color-black: #000000;
+$small-screen: 480px;
+$medium-screen: 768px;
+$large-screen: 1280px;
 
 @mixin roboto-bold {
   font-family: "Roboto", sans-serif;
@@ -53,4 +56,11 @@ $text-color-black: #000000;
   font-size: 25px;
   cursor: pointer;
   @include roboto-bold;
+}
+
+// Mixin för mobilvy (max-bredd: 768px)
+@mixin mobile {
+  @media (max-width: 768px) {
+    @content;
+  }
 }

@@ -12,8 +12,6 @@
 
   .footer-container {
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
     gap: 160px;
     padding: 80px 120px;
   }
@@ -21,14 +19,7 @@
   .footer-column {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    gap: 10px;
     flex: 0 0 300px;
-
-    h6 {
-      @include roboto-bold;
-      font-size: 18px;
-    }
 
     p {
       @include roboto-regular;
@@ -37,6 +28,7 @@
 
     ul {
       list-style: none;
+      padding: 0;
 
       li {
         margin-bottom: 6px;

@@ -7,6 +7,7 @@
   display: flex;
   align-items: flex-start;
   justify-content: center;
+  gap:20px;
 }
 
 .testimonials img {
@@ -18,11 +19,14 @@
 
 .testimonial_1, .testimonial_2 {
   display: flex;
-  align-items: center;
-  flex-direction: flex-end;
-  gap: 10px;
-  width: 409px;
+  align-items: flex-start;
   margin-top: 130px;
   font-size: 20px;
   @include roboto-italic;
+
+  p {
+     width: 409px;
+     margin-top: 0;
+     margin-left: 20px;
+  }
 }

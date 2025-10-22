@@ -21,6 +21,10 @@
     position:absolute;
     top: 660px;
 
+    @include mobile {
+    flex-direction: column-reverse;
+  }
+
     .buttonRed {
         @include buttonRed;
     }
