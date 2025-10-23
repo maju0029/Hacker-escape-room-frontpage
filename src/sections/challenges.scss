@@ -117,3 +117,35 @@
   }
 }
 
+@include mobile {
+
+  .challenges {
+    width: 100%;
+    height: auto;
+
+    .card-container {
+      display: flex;
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      -webkit-overflow-scrolling: touch;
+      gap: 1rem;
+      padding: 1rem 0.75rem;
+      justify-content: flex-start;
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+    }
+
+    .card-container::-webkit-scrollbar {
+      display: none;
+    }
+
+    .card {
+      flex: 0 0 80%;
+      scroll-snap-align: center;
+      width: auto;
+      margin: 0;
+    }
+   }
+}
+

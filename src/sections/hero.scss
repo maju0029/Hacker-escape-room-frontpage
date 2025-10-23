@@ -28,6 +28,7 @@
     .buttonBlue {
         @include buttonBlue;
     }
+
 }
 
 @include mobile {
@@ -36,5 +37,16 @@
     max-width: 480px;
     height: 274px;
   }
+
+  .heroButtons {
+    padding-top: 50px;
+    top: 400px;
+    flex-direction: column-reverse;
+  }
+
+  .buttonRed {
+          background-color: transparent;
+          color: blue;
+    }
 }
 

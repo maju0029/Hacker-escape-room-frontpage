@@ -1,7 +1,7 @@
 @use '../sections/lib' as *;
 
 .testimonials {
-  background-color: white; // bakgrunden hamnar bakom, fixa
+  background-color: white;
   width: 1280px;
   height: 400px;
   display: flex;
@@ -19,14 +19,31 @@
 
 .testimonial_1, .testimonial_2 {
   display: flex;
-  align-items: flex-start;
   margin-top: 130px;
   font-size: 20px;
   @include roboto-italic;
 
   p {
      width: 409px;
-     margin-top: 0;
      margin-left: 20px;
   }
-}
+} 
+
+@include mobile {
+  .testimonials {
+    flex-direction: column;
+    padding-top: 180px;
+    width: 480px;
+  }
+  .testimonial_1, .testimonial_2 {
+    margin-top: 10px;
+  }
+
+  .testimonial_2 {
+    display:none;
+  }
+
+  .p {
+    width: 343px;;
+  }
+  }

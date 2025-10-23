@@ -147,6 +147,15 @@ h1 {
     max-width: 480px;
     height: 274px;
   }
+  .heroButtons {
+    padding-top: 50px;
+    top: 400px;
+    flex-direction: column-reverse;
+  }
+  .buttonRed {
+    background-color: transparent;
+    color: blue;
+  }
 }
 .body {
   background-color: #e2e1e1;
@@ -174,7 +183,6 @@ h1 {
 
 .testimonial_1, .testimonial_2 {
   display: flex;
-  align-items: flex-start;
   margin-top: 130px;
   font-size: 20px;
   font-family: "Roboto", sans-serif;
@@ -184,10 +192,25 @@ h1 {
 }
 .testimonial_1 p, .testimonial_2 p {
   width: 409px;
-  margin-top: 0;
   margin-left: 20px;
 }
 
+@media (max-width: 480px) {
+  .testimonials {
+    flex-direction: column;
+    padding-top: 180px;
+    width: 480px;
+  }
+  .testimonial_1, .testimonial_2 {
+    margin-top: 10px;
+  }
+  .testimonial_2 {
+    display: none;
+  }
+  .p {
+    width: 343px;
+  }
+}
 .challenges {
   text-align: center;
   background: #fff;
@@ -328,6 +351,33 @@ h1 {
   border-radius: 6px;
 }
 
+@media (max-width: 480px) {
+  .challenges {
+    width: 100%;
+    height: auto;
+  }
+  .challenges .card-container {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    gap: 1rem;
+    padding: 1rem 0.75rem;
+    justify-content: flex-start;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  .challenges .card-container::-webkit-scrollbar {
+    display: none;
+  }
+  .challenges .card {
+    flex: 0 0 80%;
+    scroll-snap-align: center;
+    width: auto;
+    margin: 0;
+  }
+}
 .story {
   background-color: #011827;
   width: 1280px;
@@ -362,6 +412,16 @@ h1 {
   border-color: #8ACFE5;
 }
 
+@media (max-width: 480px) {
+  .story {
+    width: 480px;
+    height: 500px;
+  }
+  .story_box {
+    width: 439px;
+    height: 235px;
+  }
+}
 h3 {
   width: 416px;
   height: 106px;

@@ -30,3 +30,16 @@
   background-color: transparent;
   border-color: #8ACFE5;
 }
+
+@include mobile {
+
+  .story {
+    width: 480px;
+    height: 500px;
+  }
+
+  .story_box {
+    width: 439px;
+    height: 235px;
+  }
+}
