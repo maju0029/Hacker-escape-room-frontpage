@@ -111,11 +111,6 @@ h1 {
   position: absolute;
   top: 660px;
 }
-@media (max-width: 768px) {
-  .heroButtons {
-    flex-direction: column-reverse;
-  }
-}
 .heroButtons .buttonRed {
   background-color: #E3170A;
   color: #FFFFFF;
@@ -147,6 +142,12 @@ h1 {
   font-style: normal;
 }
 
+@media (max-width: 480px) {
+  .hero {
+    max-width: 480px;
+    height: 274px;
+  }
+}
 .body {
   background-color: #e2e1e1;
   display: flex;

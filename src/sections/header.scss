@@ -58,9 +58,7 @@ h1 {
     }
   }
 
-// Responsive styles for mobile screens
-
-  @media screen and (max-width: $small-screen) { //ska det vara min eller max då jag börjat från desktop först?
+  @media screen and (max-width: $small-screen) {
   .header {
     width: 100%;
     max-width: 480px;

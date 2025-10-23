@@ -58,9 +58,8 @@ $large-screen: 1280px;
   @include roboto-bold;
 }
 
-// Mixin för mobilvy (max-bredd: 768px)
 @mixin mobile {
-  @media (max-width: 768px) {
+  @media (max-width: 480px) {
     @content;
   }
 }
