@@ -45,11 +45,9 @@
     top: 400px;
     flex-direction: column-reverse;
 
-      .buttonRed {
-        background-color: transparent;
-        color: blue;
-      }
+  .buttonRed {
+    @include btn_underline_blue;
   }
-
+ }
 }
 

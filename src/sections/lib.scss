@@ -4,6 +4,7 @@ $text-color-black: #000000;
 $small-screen: 480px;
 $medium-screen: 768px;
 $large-screen: 1280px;
+$text-font-blue: #36769D;
 
 @mixin roboto-bold {
   font-family: "Roboto", sans-serif;
@@ -56,6 +57,13 @@ $large-screen: 1280px;
   font-size: 25px;
   cursor: pointer;
   @include roboto-bold;
+}
+
+@mixin btn_underline_blue {
+        background-color: transparent;
+        color: $text-font-blue;
+        text-decoration: underline;
+        font-size: 16px;
 }
 
 @mixin mobile {
