@@ -1,11 +1,15 @@
 .header {
   background-color: #011827;
-  width: 1280px;
+  width: 100%;
   height: 216px;
-  left: 0px;
-  top: 0px;
   display: flex;
   flex-direction: column;
+}
+.header .wrapper {
+  width: 1300px;
+  margin: 0 auto;
+  padding: 0 10px;
+  box-sizing: border-box;
 }
 
 h1 {
@@ -29,7 +33,6 @@ h1 {
 .logo-container {
   display: flex;
   align-items: center;
-  margin-left: 10px;
 }
 
 .nav {
@@ -91,8 +94,8 @@ h1 {
   }
 }
 .hero {
-  width: 1280px;
-  height: 468px;
+  min-width: 100%;
+  height: 700px;
   z-index: 1;
   position: relative;
 }
@@ -109,7 +112,7 @@ h1 {
   gap: 20px;
   z-index: 1;
   position: absolute;
-  top: 660px;
+  top: 880px;
 }
 .heroButtons .buttonRed {
   background-color: #E3170A;
@@ -142,7 +145,7 @@ h1 {
   font-style: normal;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 390px) {
   .hero {
     max-width: 480px;
     height: 274px;
@@ -152,16 +155,24 @@ h1 {
     top: 400px;
     flex-direction: column-reverse;
   }
-  .buttonRed {
+  .heroButtons .buttonRed {
     background-color: transparent;
     color: blue;
   }
 }
 .body {
-  background-color: #e2e1e1;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  width: 1280px;
+  margin: 0 auto;
+  padding: 0 10px;
+  box-sizing: border-box;
 }
 
 .testimonials {
@@ -181,7 +192,7 @@ h1 {
   border-radius: 50%;
 }
 
-.testimonial_1, .testimonial_2 {
+.testimonial_1 {
   display: flex;
   margin-top: 130px;
   font-size: 20px;
@@ -190,25 +201,36 @@ h1 {
   font-weight: 400;
   font-style: italic;
 }
-.testimonial_1 p, .testimonial_2 p {
+.testimonial_1 p {
   width: 409px;
   margin-left: 20px;
 }
 
-@media (max-width: 480px) {
+.testimonial_2 {
+  display: flex;
+  margin-top: 130px;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: italic;
+}
+.testimonial_2 p {
+  width: 409px;
+  margin-left: 20px;
+}
+
+@media (max-width: 390px) {
   .testimonials {
     flex-direction: column;
     padding-top: 180px;
-    width: 480px;
   }
-  .testimonial_1, .testimonial_2 {
-    margin-top: 10px;
+  .testimonials img {
+    width: 73px;
+    height: 72px;
   }
   .testimonial_2 {
     display: none;
-  }
-  .p {
-    width: 343px;
   }
 }
 .challenges {
@@ -351,10 +373,15 @@ h1 {
   border-radius: 6px;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 390px) {
   .challenges {
-    width: 100%;
+    width: 35%;
     height: auto;
+    text-align: start;
+  }
+  .challenges h2 {
+    font-size: 27px;
+    margin-left: 5px;
   }
   .challenges .card-container {
     display: flex;
@@ -376,6 +403,9 @@ h1 {
     scroll-snap-align: center;
     width: auto;
     margin: 0;
+  }
+  .challengesButtons {
+    flex-direction: column-reverse;
   }
 }
 .story {
@@ -412,7 +442,7 @@ h1 {
   border-color: #8ACFE5;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 390px) {
   .story {
     width: 480px;
     height: 500px;
@@ -543,6 +573,38 @@ h3 {
   margin-left: 140px;
 }
 
+@media (max-width: 390px) {
+  .play_box_1,
+  .play_box_2 {
+    flex-direction: column;
+    align-items: center;
+  }
+  .play_image_1 img,
+  .play_image_2 img {
+    width: 100%;
+    height: auto;
+    margin-left: 0;
+  }
+  .play_text_1,
+  .play_text_2 {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin: 1rem 0;
+  }
+  .play_text_1 p,
+  .play_text_2 p {
+    width: auto;
+    margin-left: 0;
+  }
+  .play_text_1 .btn_book_on_site,
+  .play_text_1 .btn_see_all_challenges,
+  .play_text_2 .btn_book_on_site,
+  .play_text_2 .btn_see_all_challenges {
+    margin: 1rem auto 0;
+    display: block;
+  }
+}
 .footer {
   background-color: #011827;
   color: #FFFFFF;
@@ -550,11 +612,17 @@ h3 {
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
-  width: 1280px;
+  width: 100%;
   height: 467px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+}
+.footer .wrapper {
+  width: 1280px;
+  margin: 0 auto;
+  padding: 0 10px;
+  box-sizing: border-box;
 }
 .footer .footer-container {
   display: flex;
@@ -588,4 +656,20 @@ h3 {
   font-style: normal;
   text-decoration: none;
   font-size: 18px;
+}
+
+@media (max-width: 390px) {
+  .footer {
+    width: 480px;
+    height: 566px;
+    flex-direction: column;
+    padding: 0;
+  }
+  .footer-column {
+    flex-direction: column;
+  }
+  .footer-container {
+    flex-direction: column;
+    padding: 10px 10px;
+  }
 }

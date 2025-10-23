@@ -1,6 +1,17 @@
+@use '../sections/lib' as *;
+
 .body {
-    background-color: #e2e1e1;
+ //   background-color: #e2e1e1;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    width:1280px;
+    margin: 0 auto;
+    padding: 0 10px;
+    box-sizing: border-box;
 }

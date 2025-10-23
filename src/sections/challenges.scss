@@ -120,8 +120,13 @@
 @include mobile {
 
   .challenges {
-    width: 100%;
+    width: 35%;
     height: auto;
+    text-align: start;
+    h2 {
+      font-size: 27px;
+      margin-left: 5px;
+    }
 
     .card-container {
       display: flex;
@@ -146,6 +151,10 @@
       width: auto;
       margin: 0;
     }
+   }
+
+   .challengesButtons {
+    flex-direction: column-reverse;
    }
 }
 

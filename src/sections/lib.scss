@@ -59,7 +59,7 @@ $large-screen: 1280px;
 }
 
 @mixin mobile {
-  @media (max-width: 480px) {
+  @media (max-width: 390px) {
     @content;
   }
 }
