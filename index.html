@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hacker Escape Rooms</title>
+
+    <!-- 💡 Flytta Google Fonts-länkar hit (hör hemma i <head>) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="output.css">
     <script src="script.js" defer></script>
 </head>
@@ -11,6 +17,7 @@
 
     <!-- Header -->
     <header class="header">
+      <!-- 🟩 WRAPPER #1 start (för headern) -->
       <div class="wrapper">
         <div class="title">
           <div class="logo-container">
@@ -18,9 +25,6 @@
           </div>
           <h1>Hacker Escape Rooms</h1>
         </div>
-          <link rel="preconnect" href="https://fonts.googleapis.com">
-          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-          <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap" rel="stylesheet">
         <nav class="nav">
           <ul>
             <li><a href="#">Play online</a></li>
@@ -30,6 +34,7 @@
           </ul>
         </nav>
       </div>
+      <!-- 🟥 WRAPPER #1 end -->
     </header>
 
     <!-- Hero -->
@@ -41,7 +46,9 @@
       <button type="button" class ="buttonBlue">On site challenges</button>
     </div>
 
+    <!-- 🟩 WRAPPER #2 start (huvudinnehåll) -->
     <div class="wrapper">
+
       <!-- Testimonials -->
       <div class="testimonials">
         <div class="testimonial_1">
@@ -60,6 +67,7 @@
           </div>
         </div>
       </div> 
+
       <!-- Challenges -->
       <section class="challenges">
         <h2>Popular challenges right now</h2>
@@ -73,14 +81,9 @@
                 <span class="participants">2-6 participants</span>
               </div>
 
-              <div class="rating">
-                ⭐⭐⭐⭐☆
-              </div>
+              <div class="rating">⭐⭐⭐⭐☆</div>
 
-              <p>
-                Praeterea, ex culpa non invenies unum aut non accusatis unum.
-                Et nihil inuitam. Nemo nocere tibi erit, et non inimicos.
-              </p>
+              <p>Praeterea, ex culpa non invenies unum aut non accusatis unum. Et nihil inuitam. Nemo nocere tibi erit, et non inimicos.</p>
 
               <button>Book this room</button>
             </div>
@@ -94,14 +97,9 @@
                 <span class="participants">2–6 participants</span>
               </div>
 
-              <div class="rating">
-                ⭐⭐⭐⭐☆
-              </div>
+              <div class="rating">⭐⭐⭐⭐☆</div>
 
-              <p>
-                Praeterea, ex culpa non invenies unum aut non accusatis unum.
-                Et nihil inuitam. Nemo nocere tibi erit, et non inimicos.
-              </p>
+              <p>Praeterea, ex culpa non invenies unum aut non accusatis unum. Et nihil inuitam. Nemo nocere tibi erit, et non inimicos.</p>
 
               <button>Book this room</button>
             </div>
@@ -115,44 +113,43 @@
                 <span class="participants">2–6 participants</span>
               </div>
 
-              <div class="rating">
-                ⭐⭐⭐⭐☆
-              </div>
+              <div class="rating">⭐⭐⭐⭐☆</div>
 
-              <p>
-                Praeterea, ex culpa non invenies unum aut non accusatis unum.
-                Et nihil inuitam. Nemo nocere tibi erit, et non inimicos.
-              </p>
+              <p>Praeterea, ex culpa non invenies unum aut non accusatis unum. Et nihil inuitam. Nemo nocere tibi erit, et non inimicos.</p>
 
               <button>Book this room</button>
             </div>
           </div>
         </div>
-          <div class="challengesButtons">
-            <button type="button" class="buttonRed">Online challenges</button>
-            <button type="button" class ="buttonBlue">On-site challenges</button>
-          </div>
+
+        <div class="challengesButtons">
+          <button type="button" class="buttonRed">Online challenges</button>
+          <button type="button" class ="buttonBlue">On-site challenges</button>
+        </div>
       </section>
-    <!-- Story Section -->
-    <div class="story">
-      <div class="story_box">
-      <p>Quodsi haberent magnalia inter potentiam et divitias, et non illam quidem haec eo spectant haec quoque vos omnino desit illud quo solo felicitatis libertatisque perficiuntur.</p>
-     </div>
-      <button class="btnStory">Read the full story</button>
-    </div>
+
+   
+      <!-- Story Section -->
+      <div class="story">
+        <div class="story_box">
+          <p>Quodsi haberent magnalia inter potentiam et divitias, et non illam quidem haec eo spectant haec quoque vos omnino desit illud quo solo felicitatis libertatisque perficiuntur.</p>
+        </div>
+        <button class="btnStory">Read the full story</button>
+      </div>
+
+    
 
     <!-- Play with Friends -->
+    
     <div class="play_box_1">
       <div class="play_image_1">
         <img src="img/twoFriends.jpg" alt="Kompisar som spelar tillsammans">
       </div>
-      <div class="wrapper">
         <div class="play_text_1">
           <h3>Play with your friends or build your team stronger at work</h3>
-          <p>Praeterea, ex culpa non invenies unum aut non accusatis unum. Et nihil inuitam. Nemo nocere tibi erit, et non inimicos, et</p>
+          <p>Praeterea, ex culpa non invenies unum aut non accusatis unum...</p>
           <button class="btn_book_on_site">Book on-site today</button>
         </div>
-      </div>
     </div>
 
     <div class="play_box_2">
@@ -160,23 +157,21 @@
         <img src="img/oneFriend.jpg" alt="Personer som spelar på plats">
       </div>
       <div class="play_text_2">
-        <div class="wrapper">
           <h3>Play online or visit our venue for one of our 25 escape rooms</h3>
-          <p>Praeterea, ex culpa non invenies unum aut non accusatis unum. Et nihil inuitam. Nemo nocere tibi erit, et non inimicos, et</p>
+          <p>Praeterea, ex culpa non invenies unum aut non accusatis unum...</p>
           <button class="btn_see_all_challenges">See all challenges</button>
-        </div>
       </div>
+    </div>
+ <!-- 🟥 WRAPPER #2 end -->
     </div>
     <!-- Footer -->
     <footer class="footer">
+      <!-- 🟩 WRAPPER #5 start (för footern) -->
       <div class="wrapper">
         <div class="footer-container">
           <div class="footer-column">
             <h4>[Esc] Hacker Escape Rooms</h4>
-            <p>
-              Quodsi haberent magnalia inter potentiam et divitias, et non illam quidem haec eo spectant 
-              haec quoque vos omnino desit illud quo solo felicitatis libertatisque perficiuntur.
-            </p>
+            <p>Quodsi haberent magnalia inter potentiam et divitias, et non illam quidem haec eo spectant haec quoque vos omnino desit illud quo solo felicitatis libertatisque perficiuntur.</p>
           </div>
 
           <div class="footer-column">
@@ -201,6 +196,7 @@
           </div>
         </div>
       </div>
-    </footer>   
+      <!-- 🟥 WRAPPER #5 end -->
+    </footer>
 </body>
 </html>
