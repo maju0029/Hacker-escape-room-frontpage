@@ -581,35 +581,45 @@ h3 {
 }
 
 @media (max-width: 390px) {
-  .play_box_1,
-  .play_box_2 {
+  h3 {
+    width: 400px;
+    height: 106px;
+    font-size: 27px;
+    margin-left: 0px;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    color: #000000;
+  }
+  .play_image_1 img {
+    width: 390px;
+    height: 300px;
+    display: flex;
+    margin-left: 0px;
+  }
+  .play_box_1 {
+    display: flex;
     flex-direction: column;
-    align-items: center;
   }
-  .play_image_1 img,
+  .play_text_1 {
+    width: 640px;
+    height: 460px;
+    font-size: 24px;
+  }
+  .play_text_1 p {
+    width: 400px;
+    height: 106px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 0px;
+  }
   .play_image_2 img {
-    width: 100%;
-    height: auto;
-    margin-left: 0;
-  }
-  .play_text_1,
-  .play_text_2 {
-    width: 100%;
-    height: auto;
-    text-align: center;
-    margin: 1rem 0;
-  }
-  .play_text_1 p,
-  .play_text_2 p {
-    width: auto;
-    margin-left: 0;
-  }
-  .play_text_1 .btn_book_on_site,
-  .play_text_1 .btn_see_all_challenges,
-  .play_text_2 .btn_book_on_site,
-  .play_text_2 .btn_see_all_challenges {
-    margin: 1rem auto 0;
-    display: block;
+    width: 320px;
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 0px;
   }
 }
 .footer {

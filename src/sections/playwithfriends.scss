@@ -82,35 +82,48 @@ h3 {
     }
 
 @include mobile {
-  .play_box_1,
-  .play_box_2 {
-    flex-direction: column;
-    align-items: center; 
-  }
 
-  .play_image_1 img,
-  .play_image_2 img {
-    width: 100%;    // Gör bilderna responsiva
-    height: auto;   // Behåller proportionerna
-    margin-left: 0; // Tar bort eventuell negativ marginal
-  }
+h3 {
+    width: 400px;
+    height: 106px;
+    font-size: 27px;
+    margin-left: 0px;
+    @include roboto-bold;
+    color: $text-color-black;
+}
 
-  .play_text_1,
-  .play_text_2 {
-    width: 100%;       // Tar upp hela bredden
-    height: auto;
-    text-align: center;
-    margin: 1rem 0;    // Lägger till lite luft mellan bild och text
+.play_image_1 img {
+  width: 390px;
+  height: 300px;
+  display: flex;
+  margin-left: 0px;
+}
 
+.play_box_1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.play_text_1 {
+    width: 640px;
+    height: 460px;
+    font-size: 24px;
     p {
-      width: auto;
-      margin-left: 0;
+    width: 400px;
+    height: 106px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 0px;
     }
+}
 
-    .btn_book_on_site,
-    .btn_see_all_challenges {
-      margin: 1rem auto 0; // Centrerar knappen
-      display: block;
-    }
-  }
+  .play_image_2 img {
+  width: 320px;
+  height: 130px;
+  display:flex;
+  flex-direction: column;
+  margin-left: 0px;
+}
+
+
 }
