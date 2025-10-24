@@ -23,8 +23,8 @@ h1 {
   display: flex;
   flex-direction: center;
   align-items: flex-start;
-  padding: 20px;
-  padding-left: 10px;
+  padding-top: 20px;
+  padding-left: 20px;
 }
 
 .logo-container {
@@ -378,7 +378,7 @@ h1 {
   }
   .challenges h2 {
     font-size: 27px;
-    margin-left: 5px;
+    margin-left: 40px;
     margin-top: 70px;
     margin-bottom: 15px;
   }
@@ -396,7 +396,7 @@ h1 {
   .challengesButtons {
     flex-direction: column-reverse;
     margin-bottom: 60px;
-    margin-left: 30px;
+    margin-left: 65px;
   }
   .challengesButtons .buttonRed {
     background-color: transparent;
@@ -459,15 +459,18 @@ h3 {
   color: #000000;
 }
 
-.play_box_1, .play_box_2 {
+.play_box_1,
+.play_box_2 {
   display: flex;
   width: 100%;
   margin: 0;
   padding: 0;
 }
 
-.play_image_1, .play_image_2,
-.play_text_1, .play_text_2 {
+.play_image_1,
+.play_image_2,
+.play_text_1,
+.play_text_2 {
   flex: 1;
 }
 
@@ -487,7 +490,8 @@ h3 {
   display: block;
 }
 
-.play_text_1, .play_text_2 {
+.play_text_1,
+.play_text_2 {
   flex: 1;
   font-size: 24px;
   background-color: white;
@@ -500,13 +504,15 @@ h3 {
   align-items: center;
   box-sizing: border-box;
 }
-.play_text_1 p, .play_text_2 p {
+.play_text_1 p,
+.play_text_2 p {
   margin-bottom: 20px;
   margin-top: -20px;
   width: 416px;
 }
 
-.play_content_1, .play_content_2 {
+.play_content_1,
+.play_content_2 {
   align-items: flex-start;
 }
 
@@ -574,18 +580,22 @@ h3 {
     max-width: 640px;
     height: 300px;
   }
-  .play_box_1, .play_box_2 {
+  .play_box_1,
+  .play_box_2 {
     display: flex;
     flex-direction: column;
   }
-  .play_text_1, .play_text_2 {
+  .play_text_1,
+  .play_text_2 {
     font-size: 24px;
     align-items: flex-start;
   }
-  .play_text_1 p, .play_text_2 p {
+  .play_text_1 p,
+  .play_text_2 p {
     width: 340px;
   }
-  .play_content_1, .play_content_2 {
+  .play_content_1,
+  .play_content_2 {
     padding-left: 10px;
   }
   .play_image_2 img {
@@ -648,6 +658,7 @@ h3 {
     flex-direction: column;
     justify-content: flex-start;
     height: 600px;
+    margin-top: 40px;
   }
   .footer .footer-column {
     flex: 0;
