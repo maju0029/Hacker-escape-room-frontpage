@@ -52,6 +52,10 @@ h3 {
     }
 }
 
+.play_content_1, .play_content_2 {
+  align-items: flex-start;
+}
+
  .btn_book_on_site {
     width: 204px;
     height: 28px;
@@ -59,6 +63,7 @@ h3 {
     @include buttonRed;
     @include roboto-bold;
     margin-bottom: 40px;
+    align-items: flex-start;
     }
 
 .btn_see_all_challenges {
@@ -81,7 +86,7 @@ h3 {
 }
 
 .play_image_1 img {
-  width:auto;
+  max-width: 640px;
   height: 300px;
 }
 
@@ -92,23 +97,21 @@ h3 {
 
 .play_text_1, .play_text_2 {
     font-size: 24px;
+    align-items: flex-start;
     p {
     width: 340px;
-    display: flex;
-    flex-direction: column;
-    margin-left: 0px;
     }
 }
 
+.play_content_1, .play_content_2 {
+  padding-left: 10px;
+}
   .play_image_2 img {
-   width:auto;
+  max-width: 640px;
   height: 300px;
-  display:flex;
-  flex-direction: column;
-  margin-left: 0px;
 }
 
   .btn_book_on_site, .btn_see_all_challenges {
-    margin:0;
+   // margin:0;
 }
 }

@@ -146,7 +146,7 @@ h1 {
 
 @media (max-width: 750px) {
   .hero {
-    width: 390px;
+    max-width: 1280px;
     height: 274px;
   }
   .heroButtons {
@@ -164,6 +164,7 @@ h1 {
 .body {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 .wrapper {
@@ -514,6 +515,10 @@ h3 {
   width: 416px;
 }
 
+.play_content_1, .play_content_2 {
+  align-items: flex-start;
+}
+
 .btn_book_on_site {
   width: 204px;
   height: 28px;
@@ -536,6 +541,7 @@ h3 {
   font-weight: 700;
   font-style: normal;
   margin-bottom: 40px;
+  align-items: flex-start;
 }
 
 .btn_see_all_challenges {
@@ -574,7 +580,7 @@ h3 {
     color: #000000;
   }
   .play_image_1 img {
-    width: auto;
+    max-width: 640px;
     height: 300px;
   }
   .play_box_1, .play_box_2 {
@@ -583,22 +589,17 @@ h3 {
   }
   .play_text_1, .play_text_2 {
     font-size: 24px;
+    align-items: flex-start;
   }
   .play_text_1 p, .play_text_2 p {
     width: 340px;
-    display: flex;
-    flex-direction: column;
-    margin-left: 0px;
+  }
+  .play_content_1, .play_content_2 {
+    padding-left: 10px;
   }
   .play_image_2 img {
-    width: auto;
+    max-width: 640px;
     height: 300px;
-    display: flex;
-    flex-direction: column;
-    margin-left: 0px;
-  }
-  .btn_book_on_site, .btn_see_all_challenges {
-    margin: 0;
   }
 }
 .footer {
@@ -608,7 +609,7 @@ h3 {
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
-  width: 100%;
+  max-width: 100%;
   margin-top: 140px;
   height: 467px;
 }
