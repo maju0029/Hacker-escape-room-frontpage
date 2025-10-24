@@ -14,14 +14,14 @@
   .card-container {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;   // så att korten radbryts på mindre skärm
+    flex-wrap: wrap;
     gap: 2rem;
   }
 
   .card {
     background: #fff;
     border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     width: 320px;
     display: flex;
@@ -30,7 +30,7 @@
 
     &:hover {
       transform: translateY(-5px);
-      box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
     }
 
     img {
@@ -81,7 +81,7 @@
     }
 
     button {
-      background:#E3170A;
+      background: #E3170A;
       color: white;
       border: none;
       padding: 0.6rem 1rem;
@@ -97,7 +97,7 @@
       }
     }
   }
-  
+
 }
 
 .challengesButtons {
@@ -107,7 +107,7 @@
   margin-top: 50px;
   margin-bottom: 50px;
   z-index: 1;
-  
+
 
   .buttonBlue {
     @include buttonBlue;
@@ -122,9 +122,11 @@
   .wrapper {
     padding: 0;
   }
+
   .challenges {
     text-align: start;
     max-width: 100%;
+
     h2 {
       font-size: 27px;
       margin-left: 5px;
@@ -140,17 +142,19 @@
       padding: 1rem 0.75rem;
       justify-content: flex-start;
     }
+
     .card {
-      flex: 0 0 80%;       
-      //max-width: 320px;   
+      flex: 0 0 80%;
     }
-   }
-   .challengesButtons {
-   flex-direction: column-reverse;
-   margin-bottom: 60px;
-   margin-left: 30px;
-   .buttonRed {
-     @include btn_underline_blue;
-   }
- }
+  }
+
+  .challengesButtons {
+    flex-direction: column-reverse;
+    margin-bottom: 60px;
+    margin-left: 30px;
+
+    .buttonRed {
+      @include btn_underline_blue;
+    }
+  }
 }

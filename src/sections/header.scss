@@ -2,15 +2,13 @@
 
 .header {
   background-color: $background-color;
-//  width: 100%;
-//  height: 216px;
 
   .wrapper {
     width: 100%;
-    max-width:1280px;
+    max-width: 1280px;
     margin: 0 auto;
     padding: 0 10px;
-    box-sizing: border-box; 
+    box-sizing: border-box;
   }
 }
 
@@ -21,7 +19,7 @@ h1 {
   margin-left: 20px;
 }
 
-.title{
+.title {
   display: flex;
   flex-direction: center;
   align-items: flex-start;
@@ -56,12 +54,12 @@ h1 {
         left: 711px;
         font-size: 24px;
         opacity: 1;
-        }
       }
     }
   }
+}
 
-  @include mobile {
+@include mobile {
   .header {
     height: auto;
     padding: 20px 20px;
@@ -69,7 +67,7 @@ h1 {
 
   h1 {
     font-size: 24px;
-    margin:0;
+    margin: 0;
     width: 78px;
     margin-left: 10px;
   }

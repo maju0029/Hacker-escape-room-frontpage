@@ -7,12 +7,9 @@
   max-width: 100%;
   margin-top: 140px;
   height: 467px;
-//  display: flex;
-//  flex-direction: column;
-//  justify-content: flex-start;
 
   .wrapper {
-    max-width:1280px;
+    max-width: 1280px;
     margin: 0 auto;
     padding: 0 10px;
     box-sizing: border-box;
@@ -21,13 +18,10 @@
   .footer-container {
     display: flex;
     justify-content: space-between;
-  //  gap: 160px;
     padding: 80px 120px;
   }
 
   .footer-column {
-  //  display: flex;
-  //  flex-direction: column;
     flex: 0 0 300px;
 
     p {
@@ -55,17 +49,17 @@
 
 @include mobile {
   .footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 600px;
 
     .footer-column {
-      flex:0;
+      flex: 0;
       width: 340px;
 
     }
-    
+
     .footer-container {
       flex-direction: column;
       padding: 10px 10px;

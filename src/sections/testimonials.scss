@@ -4,7 +4,7 @@
   background-color: white;
   display: flex;
   justify-content: center;
-  gap:20px;
+  gap: 20px;
 }
 
 .testimonials img {
@@ -21,20 +21,20 @@
   @include roboto-italic;
 
   p {
-     width: 409px;
-     margin-left: 20px;
+    width: 409px;
+    margin-left: 20px;
   }
 }
 
 .testimonial_2 {
-    display: flex;
+  display: flex;
   margin-top: 130px;
   font-size: 20px;
   @include roboto-italic;
 
   p {
-     width: 409px;
-     margin-left: 20px;
+    width: 409px;
+    margin-left: 20px;
   }
 }
 
@@ -42,27 +42,26 @@
 @include mobile {
   .testimonials {
     flex-direction: column;
-  //  padding-top: 180px;
   }
-  
+
   .testimonials img {
     width: 73px;
     height: 72px;
   }
 
   .testimonial_1 {
-    margin-top:50px;
+    margin-top: 50px;
     margin-left: 20px;
 
     .text-container {
-    p {
-     width: 250px;
-     margin: 0 0 10px 20px;
-    }
+      p {
+        width: 250px;
+        margin: 0 0 10px 20px;
+      }
     }
   }
 
   .testimonial_2 {
-    display:none;
+    display: none;
   }
-  }
+}
