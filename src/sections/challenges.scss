@@ -124,7 +124,7 @@
   }
   .challenges {
     text-align: start;
-    width: 100vw;
+    max-width: 100%;
     h2 {
       font-size: 27px;
       margin-left: 5px;
@@ -142,7 +142,7 @@
     }
     .card {
       flex: 0 0 80%;       
-      max-width: 320px;   
+      //max-width: 320px;   
     }
    }
    .challengesButtons {
