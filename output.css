@@ -395,8 +395,8 @@ h1 {
   }
   .challengesButtons {
     flex-direction: column-reverse;
+    align-items: center;
     margin-bottom: 60px;
-    margin-left: 65px;
   }
   .challengesButtons .buttonRed {
     background-color: transparent;

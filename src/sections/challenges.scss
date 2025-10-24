@@ -150,8 +150,8 @@
 
   .challengesButtons {
     flex-direction: column-reverse;
+    align-items: center;
     margin-bottom: 60px;
-    margin-left: 65px;
 
     .buttonRed {
       @include btn_underline_blue;
